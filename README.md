@@ -33,8 +33,8 @@ This repository contains a structured course on data visualization using Python'
 
 1. Create and activate a virtual environment:
 ```bash
-python -m venv .venv
-source .venv/bin/activate
+python -m venv dataviz_venv
+source dataviz_venv/bin/activate
 ```
 
 2. Install required packages:
@@ -42,25 +42,19 @@ source .venv/bin/activate
 pip install jupyter pandas matplotlib
 ```
 
+3. Alternatively:
+```bash
+pip install -r requirements.txt
+```
+
 ## Usage
 
-1. Start Jupyter Notebook server:
+1. Navigate to `src/matplotlib_notebooks/` and open any of the tutorial notebooks (tp1.ipynb through tp7.ipynb)
+
+2. Start Jupyter Notebook server:
 ```bash
-jupyter notebook
+jupyter notebook .
 ```
-
-2. Navigate to `src/matplotlib_notebooks/` and open any of the tutorial notebooks (tp1.ipynb through tp7.ipynb)
-
-## Data Generation
-
-The project includes a data generation script for creating sample student data:
-
-```bash
-python csvStudentGen.py
-```
-
-This will generate random student data in the `data/` directory for use in the visualization exercises.
-
 ## Course Materials
 
 Refer to `_Course_DataViz_CrystalClearCode_.pdf` for detailed course content and instructions.
